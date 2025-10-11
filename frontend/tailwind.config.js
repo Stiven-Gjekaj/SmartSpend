@@ -126,6 +126,9 @@ export default {
         'slide-down': 'slide-down 300ms ease-out',
         'scale-in': 'scale-in 200ms ease-out',
       },
+      ringWidth: {
+        '3': '3px',
+      },
     },
   },
   plugins: [],
