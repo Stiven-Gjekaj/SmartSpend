@@ -25,7 +25,7 @@
 - [🚨 Known Limitations](#-known-limitations)
 - [🔐 Security](#-security)
 - [📦 Production Deployment](#-production-deployment)
-- [📄 License](#-license)
+- [📄 License](LICENSE)
 
 ---
 
