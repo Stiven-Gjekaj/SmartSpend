@@ -32,9 +32,11 @@
 ## ✨ Features
 
 ### 🔐 **User Authentication**
+
 Secure registration and login with JWT tokens and bcrypt password hashing
 
 ### 📊 **CSV Import**
+
 - Drag & drop bank statements
 - Auto-detect delimiters (`,` `;` `\t`)
 - Parse multiple date formats (YYYY-MM-DD, DD/MM/YYYY, MM/DD/YYYY)
@@ -42,6 +44,7 @@ Secure registration and login with JWT tokens and bcrypt password hashing
 - Preview before import with editable categories
 
 ### 🧾 **Receipt OCR**
+
 - Upload receipt images (JPG/PNG, max 20MB)
 - AI-powered text extraction with [pytesseract](https://github.com/madmaze/pytesseract)
 - Advanced preprocessing: grayscale → denoise → threshold → deskew
@@ -51,35 +54,41 @@ Secure registration and login with JWT tokens and bcrypt password hashing
 - Fuzzy matching to existing transactions
 
 ### ✍️ **Manual Receipt Entry**
+
 - Type receipt details when images aren't available
 - Same preview and matching workflow as OCR
 - Category auto-suggestion
 - Line item support
 
 ### 🧠 **Smart Auto-Categorization**
+
 - **Rule-based keywords** (Groceries, Dining, Transportation, etc.)
 - **ML fallback** (TF-IDF + Logistic Regression)
 - Train on your own data (`/api/ml/train`)
 - Improves accuracy over time
 
 ### 🔍 **Fuzzy Transaction Matching**
+
 - Match receipts to bank transactions
 - ±5% amount tolerance
 - ±3 days date tolerance
 - Attach receipts or import as new
 
 ### 📈 **Dashboard & Analytics**
+
 - Summary cards (transactions, spent, income)
 - Category breakdown pie chart
 - Budget vs. spent bar chart
 - Recent transactions table
 
 ### 💵 **Budget Management**
+
 - Set budgets by category
 - Track spending vs. budget
 - Period support (monthly, weekly, yearly)
 
 ### ⚡ **Transaction Management**
+
 - View all transactions
 - Inline category editing
 - Filter and sort
@@ -109,6 +118,7 @@ docker compose up --build
 ```
 
 Wait for services to start (~2-3 minutes first run):
+
 ```
 ✓ postgres  Healthy
 ✓ backend   Started
@@ -117,11 +127,11 @@ Wait for services to start (~2-3 minutes first run):
 
 ### 3️⃣ Access the Application
 
-| Service | URL |
-|---------|-----|
-| 🖥️ **Frontend** | [http://localhost:3000](http://localhost:3000) |
-| ⚙️ **Backend API** | [http://localhost:8000](http://localhost:8000) |
-| 📖 **API Docs** | [http://localhost:8000/docs](http://localhost:8000/docs) |
+| Service            | URL                                                      |
+| ------------------ | -------------------------------------------------------- |
+| 🖥️ **Frontend**    | [http://localhost:3000](http://localhost:3000)           |
+| ⚙️ **Backend API** | [http://localhost:8000](http://localhost:8000)           |
+| 📖 **API Docs**    | [http://localhost:8000/docs](http://localhost:8000/docs) |
 
 ### 4️⃣ First-Time Setup
 
@@ -157,35 +167,35 @@ docker compose down -v
 
 ### 🔙 Backend
 
-| Technology | Purpose |
-|------------|---------|
-| ![Python](https://img.shields.io/badge/-Python_3.11+-3776AB?logo=python&logoColor=white) | Language |
-| ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) | Web framework |
-| ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL_15-4169E1?logo=postgresql&logoColor=white) | Database |
-| ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=white) | ORM |
-| ![JWT](https://img.shields.io/badge/-JWT-000000?logo=jsonwebtokens&logoColor=white) | Authentication |
-| ![Tesseract](https://img.shields.io/badge/-Tesseract_OCR-3178C6?logo=google&logoColor=white) | OCR engine |
-| ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white) | Image preprocessing |
-| ![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?logo=scikitlearn&logoColor=white) | ML categorization |
+| Technology                                                                                           | Purpose             |
+| ---------------------------------------------------------------------------------------------------- | ------------------- |
+| ![Python](https://img.shields.io/badge/-Python_3.11+-3776AB?logo=python&logoColor=white)             | Language            |
+| ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white)                | Web framework       |
+| ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL_15-4169E1?logo=postgresql&logoColor=white)    | Database            |
+| ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=white)       | ORM                 |
+| ![JWT](https://img.shields.io/badge/-JWT-000000?logo=jsonwebtokens&logoColor=white)                  | Authentication      |
+| ![Tesseract](https://img.shields.io/badge/-Tesseract_OCR-3178C6?logo=google&logoColor=white)         | OCR engine          |
+| ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white)                   | Image preprocessing |
+| ![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?logo=scikitlearn&logoColor=white) | ML categorization   |
 
 ### 🎨 Frontend
 
-| Technology | Purpose |
-|------------|---------|
-| ![React](https://img.shields.io/badge/-React_18-61DAFB?logo=react&logoColor=black) | UI framework |
-| ![TypeScript](https://img.shields.io/badge/-TypeScript_5-3178C6?logo=typescript&logoColor=white) | Language |
-| ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white) | Build tool |
-| ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white) | Styling |
-| ![Recharts](https://img.shields.io/badge/-Recharts-22B5BF?logo=react&logoColor=white) | Data visualization |
-| ![React Router](https://img.shields.io/badge/-React_Router-CA4245?logo=reactrouter&logoColor=white) | Routing |
-| ![Axios](https://img.shields.io/badge/-Axios-5A29E4?logo=axios&logoColor=white) | HTTP client |
+| Technology                                                                                          | Purpose            |
+| --------------------------------------------------------------------------------------------------- | ------------------ |
+| ![React](https://img.shields.io/badge/-React_18-61DAFB?logo=react&logoColor=black)                  | UI framework       |
+| ![TypeScript](https://img.shields.io/badge/-TypeScript_5-3178C6?logo=typescript&logoColor=white)    | Language           |
+| ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)                        | Build tool         |
+| ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white) | Styling            |
+| ![Recharts](https://img.shields.io/badge/-Recharts-22B5BF?logo=react&logoColor=white)               | Data visualization |
+| ![React Router](https://img.shields.io/badge/-React_Router-CA4245?logo=reactrouter&logoColor=white) | Routing            |
+| ![Axios](https://img.shields.io/badge/-Axios-5A29E4?logo=axios&logoColor=white)                     | HTTP client        |
 
 ### 🏗️ Infrastructure
 
-| Technology | Purpose |
-|------------|---------|
-| ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Containerization |
-| ![Docker Compose](https://img.shields.io/badge/-Docker_Compose-2496ED?logo=docker&logoColor=white) | Orchestration |
+| Technology                                                                                         | Purpose          |
+| -------------------------------------------------------------------------------------------------- | ---------------- |
+| ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)                 | Containerization |
+| ![Docker Compose](https://img.shields.io/badge/-Docker_Compose-2496ED?logo=docker&logoColor=white) | Orchestration    |
 
 ---
 
@@ -283,13 +293,13 @@ SmartSpend/
 
 ### 📊 Project Statistics
 
-| Category | Files | Lines of Code |
-|----------|-------|---------------|
-| Backend | 32 | ~1,926 |
-| Frontend | 24 | ~1,888 |
-| Documentation | 10 | ~2,575 |
-| Sample Data | 2 | ~35 |
-| **TOTAL** | **69** | **~6,425** |
+| Category      | Files  | Lines of Code |
+| ------------- | ------ | ------------- |
+| Backend       | 32     | ~1,926        |
+| Frontend      | 24     | ~1,888        |
+| Documentation | 10     | ~2,575        |
+| Sample Data   | 2      | ~35           |
+| **TOTAL**     | **69** | **~6,425**    |
 
 ---
 
@@ -308,6 +318,7 @@ graph LR
 ```
 
 **Process:**
+
 1. 📤 User uploads CSV file (drag & drop)
 2. 🔍 Backend detects delimiter (`,`, `;`, `\t`)
 3. 📅 Parses dates (YYYY-MM-DD, DD/MM/YYYY, MM/DD/YYYY)
@@ -330,6 +341,7 @@ graph LR
 ```
 
 **Process:**
+
 1. 📤 User uploads image (JPG/PNG, max 20MB)
 2. 🖼️ Backend preprocesses:
    - Grayscale conversion
@@ -356,6 +368,7 @@ graph LR
 ```
 
 **Process:**
+
 1. ✍️ User fills form: vendor, date, total, line items
 2. 🏷️ Backend suggests category + matching transactions
 3. 👀 User reviews preview
@@ -379,6 +392,7 @@ docker compose exec backend pytest tests/test_parser.py
 ```
 
 **Coverage:**
+
 - ✅ CSV parsing (delimiters, dates, amounts) - 7 tests
 - ✅ OCR text parsing and receipt extraction - 10 tests
 - ✅ Authentication and protected endpoints - 8 tests
@@ -393,6 +407,7 @@ docker compose exec frontend npm test
 ```
 
 **Coverage:**
+
 - ✅ Receipt upload component rendering
 - ✅ OCR result display
 - ✅ Verification form editing
@@ -404,6 +419,7 @@ docker compose exec frontend npm test
 ### 📋 Manual Testing
 
 See [TESTING.md](TESTING.md) for comprehensive manual testing workflows covering:
+
 - User registration & login
 - CSV import with edge cases
 - Receipt OCR with verification
@@ -419,45 +435,45 @@ See [TESTING.md](TESTING.md) for comprehensive manual testing workflows covering
 
 ### 🔐 Authentication (2 endpoints)
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/auth/register` | Register new user |
-| `POST` | `/api/auth/login` | Login user (returns JWT token) |
+| Method | Endpoint             | Description                    |
+| ------ | -------------------- | ------------------------------ |
+| `POST` | `/api/auth/register` | Register new user              |
+| `POST` | `/api/auth/login`    | Login user (returns JWT token) |
 
 ### 💳 Transactions (4 endpoints)
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| `POST` | `/api/transactions/upload` | Upload CSV for preview | ✅ |
-| `POST` | `/api/transactions/import` | Import transactions from CSV | ✅ |
-| `GET` | `/api/transactions` | Get user transactions | ✅ |
-| `PATCH` | `/api/transactions/{id}` | Update transaction | ✅ |
+| Method  | Endpoint                   | Description                  | Auth Required |
+| ------- | -------------------------- | ---------------------------- | ------------- |
+| `POST`  | `/api/transactions/upload` | Upload CSV for preview       | ✅            |
+| `POST`  | `/api/transactions/import` | Import transactions from CSV | ✅            |
+| `GET`   | `/api/transactions`        | Get user transactions        | ✅            |
+| `PATCH` | `/api/transactions/{id}`   | Update transaction           | ✅            |
 
 ### 🧾 Receipts (5 endpoints)
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| `POST` | `/api/receipts/upload` | Upload receipt image → OCR | ✅ |
-| `POST` | `/api/receipts/verify` | Verify/edit OCR results | ✅ |
-| `POST` | `/api/receipts/import` | Import verified receipt | ✅ |
-| `POST` | `/api/receipts/manual` | Manual receipt entry preview | ✅ |
-| `GET` | `/api/receipts` | Get user receipts | ✅ |
+| Method | Endpoint               | Description                  | Auth Required |
+| ------ | ---------------------- | ---------------------------- | ------------- |
+| `POST` | `/api/receipts/upload` | Upload receipt image → OCR   | ✅            |
+| `POST` | `/api/receipts/verify` | Verify/edit OCR results      | ✅            |
+| `POST` | `/api/receipts/import` | Import verified receipt      | ✅            |
+| `POST` | `/api/receipts/manual` | Manual receipt entry preview | ✅            |
+| `GET`  | `/api/receipts`        | Get user receipts            | ✅            |
 
 ### 📊 Dashboard & Budgets (4 endpoints)
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| `GET` | `/api/dashboard/summary` | Dashboard summary with charts | ✅ |
-| `POST` | `/api/budgets` | Create budget | ✅ |
-| `GET` | `/api/budgets` | Get user budgets | ✅ |
-| `DELETE` | `/api/budgets/{id}` | Delete budget | ✅ |
+| Method   | Endpoint                 | Description                   | Auth Required |
+| -------- | ------------------------ | ----------------------------- | ------------- |
+| `GET`    | `/api/dashboard/summary` | Dashboard summary with charts | ✅            |
+| `POST`   | `/api/budgets`           | Create budget                 | ✅            |
+| `GET`    | `/api/budgets`           | Get user budgets              | ✅            |
+| `DELETE` | `/api/budgets/{id}`      | Delete budget                 | ✅            |
 
 ### 🤖 ML (2 endpoints)
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| `POST` | `/api/ml/train` | Train categorization model | ✅ |
-| `POST` | `/api/ml/predict` | Predict category | ✅ |
+| Method | Endpoint          | Description                | Auth Required |
+| ------ | ----------------- | -------------------------- | ------------- |
+| `POST` | `/api/ml/train`   | Train categorization model | ✅            |
+| `POST` | `/api/ml/predict` | Predict category           | ✅            |
 
 **Total: 17 endpoints**
 
@@ -477,25 +493,26 @@ cp .env.example .env
 
 **Key variables:**
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DATABASE_URL` | `postgresql://user:pass@postgres/smartspend` | PostgreSQL connection string |
-| `SECRET_KEY` | `your-secret-key-change-in-production` | App secret key |
-| `JWT_SECRET_KEY` | `your-jwt-secret-change-in-production` | JWT signing key |
-| `MAX_UPLOAD_SIZE_MB` | `20` | Max file upload size |
-| `UPLOAD_DIR` | `./uploads` | Upload directory path |
+| Variable             | Default                                      | Description                  |
+| -------------------- | -------------------------------------------- | ---------------------------- |
+| `DATABASE_URL`       | `postgresql://user:pass@postgres/smartspend` | PostgreSQL connection string |
+| `SECRET_KEY`         | `your-secret-key-change-in-production`       | App secret key               |
+| `JWT_SECRET_KEY`     | `your-jwt-secret-change-in-production`       | JWT signing key              |
+| `MAX_UPLOAD_SIZE_MB` | `20`                                         | Max file upload size         |
+| `UPLOAD_DIR`         | `./uploads`                                  | Upload directory path        |
 
 **⚠️ Production**: Change all secrets before deploying!
 
 ### 🐳 Docker Services
 
-| Service | Image | Port | Purpose |
-|---------|-------|------|---------|
-| `postgres` | PostgreSQL 15 Alpine | 5432 | Database |
-| `backend` | Python 3.11 + Tesseract | 8000 | API server |
-| `frontend` | Node 20 Alpine + Vite | 3000 | Web app |
+| Service    | Image                   | Port | Purpose    |
+| ---------- | ----------------------- | ---- | ---------- |
+| `postgres` | PostgreSQL 15 Alpine    | 5432 | Database   |
+| `backend`  | Python 3.11 + Tesseract | 8000 | API server |
+| `frontend` | Node 20 Alpine + Vite   | 3000 | Web app    |
 
 **Volume mounts:**
+
 - Backend: `./backend/app → /app` (hot reload)
 - Frontend: `./frontend → /app` (hot reload)
 - Database: `postgres_data` (persistent storage)
@@ -506,38 +523,42 @@ cp .env.example .env
 
 ### 🏷️ Rule-Based Keywords (checked first)
 
-| Category | Keywords |
-|----------|----------|
-| 🛒 **Groceries** | grocery, supermarket, whole foods, trader joe, safeway, kroger, etc. |
-| 🍽️ **Dining** | restaurant, cafe, starbucks, mcdonald, pizza, burger, etc. |
-| 🚗 **Transportation** | uber, lyft, gas, parking, transit, subway, etc. |
-| ⚡ **Utilities** | electric, water, internet, phone, verizon, etc. |
-| 🎬 **Entertainment** | netflix, spotify, movie, theater, cinema, etc. |
-| 🛍️ **Shopping** | amazon, target, walmart, ebay, etc. |
-| 🏥 **Healthcare** | pharmacy, doctor, hospital, cvs, walgreens, etc. |
-| 💰 **Income** | salary, paycheck, deposit, transfer in, etc. |
-| 📦 **Other** | Fallback category |
+| Category              | Keywords                                                             |
+| --------------------- | -------------------------------------------------------------------- |
+| 🛒 **Groceries**      | grocery, supermarket, whole foods, trader joe, safeway, kroger, etc. |
+| 🍽️ **Dining**         | restaurant, cafe, starbucks, mcdonald, pizza, burger, etc.           |
+| 🚗 **Transportation** | uber, lyft, gas, parking, transit, subway, etc.                      |
+| ⚡ **Utilities**      | electric, water, internet, phone, verizon, etc.                      |
+| 🎬 **Entertainment**  | netflix, spotify, movie, theater, cinema, etc.                       |
+| 🛍️ **Shopping**       | amazon, target, walmart, ebay, etc.                                  |
+| 🏥 **Healthcare**     | pharmacy, doctor, hospital, cvs, walgreens, etc.                     |
+| 💰 **Income**         | salary, paycheck, deposit, transfer in, etc.                         |
+| 📦 **Other**          | Fallback category                                                    |
 
 ### 🧠 ML Fallback (TF-IDF + Logistic Regression)
 
 **When rules don't match:**
+
 1. Uses TF-IDF vectorization on transaction descriptions
 2. Logistic Regression classifier
 3. Trains on user's categorized transactions
 4. Requires minimum **10 transactions** to train
 
 **Training:**
+
 ```bash
 curl -X POST http://localhost:8000/api/ml/train \
   -H "Authorization: Bearer $TOKEN"
 ```
 
 **Accuracy:**
+
 - Rule-based: ~80% coverage for common categories
 - ML: Improves over time with user data
 - Combined: Best of both worlds
 
 **Model persistence:**
+
 - Saved to `uploads/categorization_model_<user_id>.pkl`
 - Auto-loads on prediction
 
@@ -548,6 +569,7 @@ curl -X POST http://localhost:8000/api/ml/train \
 ### 🐳 Docker Issues
 
 **Port already in use?**
+
 ```bash
 # Check what's using the port
 lsof -i :3000  # macOS/Linux
@@ -559,6 +581,7 @@ ports:
 ```
 
 **Database connection errors?**
+
 ```bash
 # Wait for postgres healthcheck
 docker compose logs postgres
@@ -568,6 +591,7 @@ docker compose ps postgres
 ```
 
 **Containers not starting?**
+
 ```bash
 # View logs
 docker compose logs backend
@@ -581,6 +605,7 @@ docker compose up --build
 ### 🧾 OCR Issues
 
 **OCR not working?**
+
 - ✅ Ensure image is **clear, well-lit, minimal skew**
 - ✅ Check Tesseract is installed:
   ```bash
@@ -590,6 +615,7 @@ docker compose up --build
 - ✅ Supported formats: JPG, PNG
 
 **Low confidence scores?**
+
 - 📸 Retake photo with better lighting
 - 📐 Ensure receipt is flat (not crumpled)
 - 🔄 Try rotating image if text is sideways
@@ -597,11 +623,13 @@ docker compose up --build
 ### 📂 File Upload Issues
 
 **File rejected?**
+
 - ✅ Check size < 20MB
 - ✅ Check format (CSV, JPG, PNG)
 - ✅ Check `MAX_UPLOAD_SIZE_MB` in `.env`
 
 **CSV import fails?**
+
 - ✅ Ensure CSV has headers with keywords: `date`, `description`, `amount`
 - ✅ Try different delimiter (`;` instead of `,`)
 - ✅ Check date format is supported
@@ -609,10 +637,12 @@ docker compose up --build
 ### 🔐 Authentication Issues
 
 **Token expired?**
+
 - 🔄 Logout and login again
 - 🔍 Check JWT token in browser localStorage
 
 **Can't access protected routes?**
+
 - ✅ Verify logged in
 - ✅ Check token is being sent in `Authorization` header
 
@@ -620,14 +650,14 @@ docker compose up --build
 
 ## 🚨 Known Limitations
 
-| Limitation | Impact | Workaround |
-|------------|--------|------------|
-| 📸 **OCR accuracy** | Varies by image quality | Always verify extracted data |
-| 📅 **Date ambiguity** | `01/02/2024` may parse incorrectly | Use YYYY-MM-DD format |
-| 📄 **CSV formats** | Assumes standard headers | Ensure headers contain keywords |
-| 💾 **File storage** | Local disk (not production-ready) | Use S3/GCS for production |
-| 💵 **Currency** | Single currency (USD) | Extend models for multi-currency |
-| 🌍 **Tesseract language** | English only by default | Install additional language packs |
+| Limitation                | Impact                             | Workaround                        |
+| ------------------------- | ---------------------------------- | --------------------------------- |
+| 📸 **OCR accuracy**       | Varies by image quality            | Always verify extracted data      |
+| 📅 **Date ambiguity**     | `01/02/2024` may parse incorrectly | Use YYYY-MM-DD format             |
+| 📄 **CSV formats**        | Assumes standard headers           | Ensure headers contain keywords   |
+| 💾 **File storage**       | Local disk (not production-ready)  | Use S3/GCS for production         |
+| 💵 **Currency**           | Single currency (USD)              | Extend models for multi-currency  |
+| 🌍 **Tesseract language** | English only by default            | Install additional language packs |
 
 **All limitations documented with workarounds.**
 
@@ -718,15 +748,15 @@ ENVIRONMENT=production
 
 ## 📚 Additional Documentation
 
-| Document | Purpose |
-|----------|---------|
-| [QUICKSTART.md](QUICKSTART.md) | ⚡ Fast setup guide |
-| [TESTING.md](TESTING.md) | 🧪 Testing instructions and workflows |
-| [SETUP_CHECKLIST.md](SETUP_CHECKLIST.md) | ✅ Installation verification checklist |
-| [REPO_STRUCTURE.md](REPO_STRUCTURE.md) | 📁 Detailed file structure |
-| [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) | 📊 Project statistics and summary |
-| [FILE_MANIFEST.md](FILE_MANIFEST.md) | 📋 Complete file listing |
-| [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) | 🏃 Step-by-step run guide |
+| Document                                   | Purpose                                |
+| ------------------------------------------ | -------------------------------------- |
+| [QUICKSTART.md](QUICKSTART.md)             | ⚡ Fast setup guide                    |
+| [TESTING.md](TESTING.md)                   | 🧪 Testing instructions and workflows  |
+| [SETUP_CHECKLIST.md](SETUP_CHECKLIST.md)   | ✅ Installation verification checklist |
+| [REPO_STRUCTURE.md](REPO_STRUCTURE.md)     | 📁 Detailed file structure             |
+| [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)   | 📊 Project statistics and summary      |
+| [FILE_MANIFEST.md](FILE_MANIFEST.md)       | 📋 Complete file listing               |
+| [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) | 🏃 Step-by-step run guide              |
 
 ---
 
@@ -741,6 +771,7 @@ Issues and PRs welcome!
 5. Open a Pull Request
 
 **Development guidelines:**
+
 - ✅ Write tests for new features
 - 📝 Update documentation
 - 🎨 Follow existing code style
@@ -771,21 +802,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-## 🎉 Project Status
-
-**Status**: 🚀 **PRODUCTION-READY MVP**
-
-✅ All deliverables complete
-✅ 69 files delivered
-✅ ~6,425 lines of code
-✅ 30+ tests passing
-✅ Full documentation
-✅ Docker setup working
-
-**Ready to run**: `docker compose up --build` → [http://localhost:3000](http://localhost:3000)
 
 ---
 
