@@ -767,8 +767,6 @@ Issues and PRs welcome!
 
 <div align="center">
 
-**Made with ❤️ using FastAPI, React, and Docker**
-
 [🐛 Report Bug](https://github.com/yourusername/smartspend/issues) · [✨ Request Feature](https://github.com/yourusername/smartspend/issues)
 
 </div>
