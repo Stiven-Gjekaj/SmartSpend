@@ -746,20 +746,6 @@ ENVIRONMENT=production
 
 ---
 
-## 📚 Additional Documentation
-
-| Document                                   | Purpose                                |
-| ------------------------------------------ | -------------------------------------- |
-| [QUICKSTART.md](QUICKSTART.md)             | ⚡ Fast setup guide                    |
-| [TESTING.md](TESTING.md)                   | 🧪 Testing instructions and workflows  |
-| [SETUP_CHECKLIST.md](SETUP_CHECKLIST.md)   | ✅ Installation verification checklist |
-| [REPO_STRUCTURE.md](REPO_STRUCTURE.md)     | 📁 Detailed file structure             |
-| [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)   | 📊 Project statistics and summary      |
-| [FILE_MANIFEST.md](FILE_MANIFEST.md)       | 📋 Complete file listing               |
-| [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) | 🏃 Step-by-step run guide              |
-
----
-
 ## 🤝 Contributing
 
 Issues and PRs welcome!
